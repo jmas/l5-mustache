@@ -165,6 +165,16 @@ Other than that it is business as usual!
 			return View::make('blog.index', compact('posts));
 		});
 
+# Helpers
+
+Translation:
+
+```html
+{{#lang}}posts.title{{/lang}}
+
+{{#choice}}posts.title|2{{/choice}}
+```
+
 # Configure
 
 You can alter the configuration options that are passed to Mustache.php by publishing the config file.
