@@ -9,6 +9,10 @@
         {
             "name": "Michael Dimaculangan",
             "email": "mcdimaculangan@gmail.com"
+        },
+        {
+            "name": "Maycon Viana Bordin",
+            "email": "mayconbordin@gmail.com"
         }
     ],
     "require": {
@@ -18,7 +22,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Avatarguru\\MustacheL5": "src/"
+            "Mayconbordin\\L5Mustache": "src/"
         }
     },
     "minimum-stability": "dev"

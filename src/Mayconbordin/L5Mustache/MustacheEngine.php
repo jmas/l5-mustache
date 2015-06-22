@@ -1,5 +1,4 @@
-<?php
-namespace Avatarguru\MustacheL5;
+<?php namespace Mayconbordin\L5Mustache;
 
 use Illuminate\View\Engines\EngineInterface;
 use Illuminate\Filesystem\Filesystem;
@@ -16,7 +15,7 @@ class MustacheEngine implements EngineInterface {
 	{
 		$view = $this->files->get($path);
 		$app = app();
-		$m = new Mustache_Engine( $app['config']->get('mustache-l5') );
+		$m = new Mustache_Engine( $app['config']->get('l5-mustache') );
  
  		$data = array_map(function($item){
 			return (is_object($item) && method_exists($item, 'toArray')) ? $item->toArray() : $item;

@@ -1,8 +1,8 @@
-<?php namespace Avatarguru\MustacheL5;
+<?php namespace Mayconbordin\L5Mustache;
 
 use Illuminate\Support\ServiceProvider;
 
-class MustacheL5ServiceProvider extends ServiceProvider {
+class L5MustacheServiceProvider extends ServiceProvider {
 
 	/**
 	 * Indicates if loading of the provider is deferred.
@@ -10,6 +10,21 @@ class MustacheL5ServiceProvider extends ServiceProvider {
 	 * @var bool
 	 */
 	protected $defer = false;
+	
+	/**
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        $this->publishes([
+            __DIR__ . '/../../config/config.php' => config_path('l5-mustache.php')
+        ]);
+
+        $this->mergeConfigFrom(
+            __DIR__ . '/../../config/config.php', 'l5-mustache'
+        );
+    }
 
 	/**
 	 * Register the service provider.
@@ -24,7 +39,7 @@ class MustacheL5ServiceProvider extends ServiceProvider {
 		{
 			$resolver->register('mustache', function() use($app)
 			{
-				return $app->make('Avatarguru\MustacheL5\MustacheEngine');
+				return $app->make('Mayconbordin\L5Mustache\MustacheEngine');
 			});
 			return $resolver;
 		});
@@ -43,7 +58,7 @@ class MustacheL5ServiceProvider extends ServiceProvider {
 	 */
 	public function provides()
 	{
-		return array('mustache-l5');
+		return ['l5-mustache'];
 	}
 
 }

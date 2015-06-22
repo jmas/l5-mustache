@@ -1,5 +1,4 @@
-<?php
-namespace Avatarguru\MustacheL5;
+<?php namespace Mayconbordin\L5Mustache;
 
 use Mustache_Loader;
 use Illuminate\Filesystem\Filesystem;

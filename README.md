@@ -22,7 +22,7 @@ app/config/app.php
 ```php
 ...
 
-'Avatarguru\MustacheL5\MustacheL5ServiceProvider',
+'Mayconbordin\L5Mustache\L5MustacheServiceProvider',
 	
 ...
 ```
