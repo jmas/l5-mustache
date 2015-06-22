@@ -9,7 +9,7 @@ Add mustache-l5 as a dependency to your `composer.json` file
 ```json
 "require": {
 	"laravel/framework": "5.1.*",
-	"mayconbordin/mustache-l5": "dev-master"
+	"mayconbordin/l5-mustache": "dev-master"
 }
 ```
 	
