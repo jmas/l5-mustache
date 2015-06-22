@@ -9,7 +9,7 @@
         {
             "name": "Michael Dimaculangan",
             "email": "mcdimaculangan@gmail.com"
-        },
+        }
     ],
     "require": {
         "php": ">=5.3.0",
