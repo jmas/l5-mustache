@@ -1,20 +1,20 @@
 {
-    "name": "avatarguru/mustache-l5",
+    "name": "mayconbordin/mustache-l5",
     "type": "library",
     "description": "A Mustache.php wrapper for Laravel 5",
     "keywords": ["laravel", "laravel 5", "mustache", "php"],
-    "homepage": "https://github.com/avatarguru/mustache-l5",
+    "homepage": "https://github.com/mayconbordin/mustache-l5",
     "license": "MIT",
     "authors": [
         {
             "name": "Michael Dimaculangan",
             "email": "mcdimaculangan@gmail.com"
-        }
+        },
     ],
     "require": {
         "php": ">=5.3.0",
         "illuminate/support": "~4|~5",
-        "mustache/mustache": "~2.5"
+        "mustache/mustache": "~2.8"
     },
     "autoload": {
         "psr-0": {
