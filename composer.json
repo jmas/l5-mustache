@@ -1,9 +1,9 @@
 {
-    "name": "mayconbordin/mustache-l5",
+    "name": "mayconbordin/l5-mustache",
     "type": "library",
     "description": "A Mustache.php wrapper for Laravel 5",
     "keywords": ["laravel", "laravel 5", "mustache", "php"],
-    "homepage": "https://github.com/mayconbordin/mustache-l5",
+    "homepage": "https://github.com/mayconbordin/l5-mustache",
     "license": "MIT",
     "authors": [
         {
@@ -13,7 +13,7 @@
     ],
     "require": {
         "php": ">=5.3.0",
-        "illuminate/support": "~4|~5",
+        "illuminate/support": "~5",
         "mustache/mustache": "~2.8"
     },
     "autoload": {
