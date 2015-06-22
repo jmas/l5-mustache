@@ -1,7 +1,7 @@
 laravel5-mustache
 =================
 
-A Mustache.php wrapper for Laravel v4 | v5
+A Mustache.php wrapper for Laravel 5.
 
 # Install
 Add mustache-l5 as a dependency to your `composer.json` file
@@ -9,7 +9,7 @@ Add mustache-l5 as a dependency to your `composer.json` file
 ```json
 "require": {
 	"laravel/framework": "5.1.*",
-	"avatarguru/mustache-l5": "dev-master"
+	"mayconbordin/mustache-l5": "dev-master"
 }
 ```
 	
