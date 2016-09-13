@@ -18,7 +18,7 @@ class L5MustacheServiceProvider extends ServiceProvider {
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../../config/config.php' => config_path('l5-mustache.php')
+	        __DIR__ . '/../../config/config.php' => function_exists('config_path') ? config_path('l5-mustache.php') : self::config_path('l5-mustache.php')
         ]);
 
         $this->mergeConfigFrom(
@@ -59,6 +59,18 @@ class L5MustacheServiceProvider extends ServiceProvider {
 	public function provides()
 	{
 		return ['l5-mustache'];
+	}
+
+	/**
+	 * Helper function, since config_path does not exist in Lumen
+	 *
+	 * @param string $path
+	 *
+	 * @return string
+	 */
+	static function config_path($path = '')
+	{
+		return app()->basePath() . '/config' . ($path ? '/' . $path : $path);
 	}
 
 }
