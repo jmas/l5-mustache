@@ -1,6 +1,8 @@
 laravel5-mustache
 =================
 
+[![Latest Stable Version](https://poser.pugx.org/mayconbordin/l5-mustache/version)](https://packagist.org/packages/mayconbordin/l5-mustache) [![Total Downloads](https://poser.pugx.org/mayconbordin/l5-mustache/downloads)](https://packagist.org/packages/mayconbordin/l5-mustache) [![Latest Unstable Version](https://poser.pugx.org/mayconbordin/l5-mustache/v/unstable)](//packagist.org/packages/mayconbordin/l5-mustache) [![License](https://poser.pugx.org/mayconbordin/l5-mustache/license)](https://packagist.org/packages/mayconbordin/l5-mustache)
+
 A Mustache.php wrapper for Laravel 5.
 
 # Install
