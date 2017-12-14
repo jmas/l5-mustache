@@ -1,6 +1,6 @@
 <?php namespace Mayconbordin\L5Mustache;
 
-use Illuminate\View\Engines\EngineInterface;
+use Illuminate\Contracts\View\Engine as EngineInterface;
 use Illuminate\Filesystem\Filesystem;
 use Mustache_Engine;
 
