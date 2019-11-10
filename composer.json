@@ -17,7 +17,7 @@
     ],
     "require": {
         "php": ">=5.3.0",
-        "illuminate/support": "~5",
+        "illuminate/support": "~6",
         "mustache/mustache": "~2.8"
     },
     "autoload": {
